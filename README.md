@@ -1,6 +1,8 @@
 # Unity3DPlugins
 ---------
-## Screenshot Plugin Documentation
+
+# Screenshot Plugin Documentation
+--------
 The Screenshot Plugin is a custom plugin for Unity that allows you to capture screenshots of the game view and save them to a specified folder. It integrates with Unity using both C# scripts and a C++ plugin to provide a seamless screenshot capturing experience.
 
 ## Features
@@ -52,3 +54,6 @@ The plugin currently supports Windows platforms. If you wish to extend its funct
 
 ## Conclusion
 The Screenshot Plugin provides an easy-to-use solution for capturing screenshots during gameplay in Unity. With its seamless integration using both C# scripts and a C++ plugin, you can quickly capture and save screenshots of the game view to enhance your development and debugging process.
+
+
+-----------
