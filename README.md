@@ -13,40 +13,40 @@ Uses a C++ plugin for efficient and platform-specific screenshot capturing.
 Unity 3D (version 2021.3.16f1 or later)
 
 ## Installation
-To install the Screenshot Plugin in your Unity project, follow these steps:
+1. To install the Screenshot Plugin in your Unity project, follow these steps:
 
-Copy the C++ plugin DLL file (YourPluginName.dll) into your Unity project's "Plugins" folder. Place the DLL in the appropriate platform-specific subfolder (e.g., "x86" or "x86_64") based on your target platform.
+2. Copy the C++ plugin DLL file (YourPluginName.dll) into your Unity project's "Plugins" folder. Place the DLL in the appropriate platform-specific subfolder (e.g., "x86" or "x86_64") based on your target platform.
 
-Create a new C# script in your Unity project and name it ScreenshotCaptureController.cs. Copy the provided C# script code into this file.
+3. Create a new C# script in your Unity project and name it ScreenshotCaptureController.cs. Copy the provided C# script code into this file.
 
-Attach the ScreenshotCaptureController script to a GameObject in your scene, such as the main camera or an empty GameObject.
+4. Attach the ScreenshotCaptureController script to a GameObject in your scene, such as the main camera or an empty GameObject.
 
 ## Usage
-The Screenshot Plugin provides a simple way to capture screenshots during gameplay. Follow these steps to capture a screenshot:
+1. The Screenshot Plugin provides a simple way to capture screenshots during gameplay. Follow these steps to capture a screenshot:
 
-Run your Unity project in the Unity editor or build and run the game as a standalone application.
+2. Run your Unity project in the Unity editor or build and run the game as a standalone application.
 
-During gameplay, press the F5 key (you can modify the key in the Update() method of the ScreenshotCaptureController script) to capture a screenshot of the game view.
+3. During gameplay, press the F5 key (you can modify the key in the Update() method of the ScreenshotCaptureController script) to capture a screenshot of the game view.
 
-The screenshot will be saved to a specified folder within the persistent data path. By default, the screenshots are saved in the "Screenshots" folder.
+4. The screenshot will be saved to a specified folder within the persistent data path. By default, the screenshots are saved in the "Screenshots" folder.
 
-To change the folder location or customize the filename format, modify the constants in the ScreenshotCaptureController script. You can specify a different folder path, filename prefix, or file extension to suit your needs.
+5. To change the folder location or customize the filename format, modify the constants in the ScreenshotCaptureController script. You can specify a different folder path, filename prefix, or file extension to suit your needs.
 
 ## Troubleshooting
 If you encounter any issues with the Screenshot Plugin, consider the following troubleshooting steps:
 
-Ensure that the C++ plugin DLL file is placed in the correct platform-specific folder within the "Plugins" directory.
+1. Ensure that the C++ plugin DLL file is placed in the correct platform-specific folder within the "Plugins" directory.
 
-Verify that the C++ plugin code is properly implemented and compatible with Unity. Make sure that the CaptureScreenshot function signature matches the P/Invoke declaration in the C# script.
+2. Verify that the C++ plugin code is properly implemented and compatible with Unity. Make sure that the CaptureScreenshot function signature matches the P/Invoke declaration in the C# script.
 
-Check that the necessary libraries and dependencies are included and linked correctly in the C++ plugin code.
+3. Check that the necessary libraries and dependencies are included and linked correctly in the C++ plugin code.
 
-Make sure the folder specified in the ScreenshotCaptureController script has the necessary write permissions for saving the screenshots.
+4. Make sure the folder specified in the ScreenshotCaptureController script has the necessary write permissions for saving the screenshots.
 
-Check the Unity console for any error messages or warnings related to the plugin. Enable detailed logging if necessary.
+5. Check the Unity console for any error messages or warnings related to the plugin. Enable detailed logging if necessary.
 
 ## Limitations
-The Screenshot Plugin captures screenshots of the game view only and does not support capturing specific UI elements or overlays.
+The Screenshot Plugin captures screenshots of the game view only and does not support capturing specific UI elements or overlays but will soon be updated soon. 
 
 The plugin currently supports Windows platforms. If you wish to extend its functionality to other platforms, you'll need to modify and adapt the C++ plugin code accordingly.
 
